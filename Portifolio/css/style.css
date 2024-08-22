@@ -333,7 +333,7 @@ figure{
 	}
 	#profissional-picture{
 		max-width: 300px;
-		min-width: 180px;
+		min-width: 120px;
 	}
 	footer{
 		text-align: center;
@@ -349,8 +349,8 @@ figure{
 	width: 87%;
 	}
 	#profissional-picture{
-		
-		min-width: 170px;
+		width: 120px;
+		min-width: 80px;
 	}
 
 
