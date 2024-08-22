@@ -1,0 +1,155 @@
+body{
+	font-family: Arial;
+	padding:20px;
+	background-image: url("../img/fundo5.jpg");
+	background-size: 100%;
+}
+
+header{
+	padding: 25px;
+	font-size: 35px;
+	text-align: center;
+	background-image: url("../img/fundo2.avif");
+	background-size: 500px;	
+	position: relative;
+}
+
+.left-column{
+	float: left;
+	width:25%;
+	padding-right: 20px;
+}
+
+.middle-column{
+	float: left;
+	width: 50%;
+}
+
+* {
+	box-sizing: border-box;
+	color: white;
+}
+
+.right-column{
+	float: left;
+	width: 25%;
+	padding-left:  20px;
+	position: sticky;
+	top: 0;	
+}
+
+footer{
+	padding:  20px;
+	text-align: center;
+	margin-top: 20px;
+	background-image: url("../img/fundo2.avif");
+	background-size: 500px;
+}
+
+.card .bold{
+	font-weight: bold;
+}
+
+#occupation-area{
+	margin: 10px;
+}
+
+article {
+	background-color: rgba(245, 245, 248, 0.082);
+	padding:  20px;
+	margin-top: 20px;
+}
+
+
+.card-content li {
+	margin: 20px;
+}
+
+
+main:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+figure{
+	padding-left:  0px;
+	margin: 0px;
+}
+
+#social-network{
+	animation-duration: 4s;
+	animation-name: image;
+	animation-timing-function: ease-in-out;
+	animation-delay: 2s;
+	animation-iteration-count: 2;
+	background: black;
+	width: 30%;
+	height: 15%;
+	padding: 2%;
+	border-radius: 5px 25px;
+}
+
+#profissional-picture{
+	animation-duration: 4s;
+	animation-name: rotate-image;
+	animation-timing-function: ease-in-out;
+	animation-delay: 2s;
+	animation-iteration-count: 2;
+	background: black;
+	width: 100%;
+	padding: 3%;
+	border-radius: 10px 50px;
+}
+
+@keyframes rotate-image{
+	50%{
+		transform: translateZ(-10px) rotateX(60deg) rotateZ(29deg) rotateY(-180deg);
+	}
+}
+
+@keyframes image{
+	50%{
+		transform: translateZ(-10px) rotateX(60deg) rotateZ(29deg) rotateY(-180deg);
+	}
+}
+
+@keyframes animation{
+				
+	from{
+		transform: translateX(0);
+	}
+
+	to{
+		transform: translateX(20px);
+	}
+}
+
+#animation-footer {
+	animation-name: animation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+
+@media all and (max-width: 900px){
+
+	header{
+		font-size: 100%;
+	}
+
+	.left-column{
+		width: 100%;
+		padding-right: 0px;
+	}
+
+	.middle-column{
+		width: 100%;
+	}
+
+	.right-column{
+		width: 100%;
+		padding-left: 0px;
+	}
+}
