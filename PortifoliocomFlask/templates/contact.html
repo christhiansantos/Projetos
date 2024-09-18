@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+
+		<title>Portifólio</title>
+	</head>
+
+	<body>
+		<header>
+		
+			<img id="logo" src="../static/img/logo1.png" alt="Logo">	
+		
+			<nav class="menu">
+				<ul> 
+					<li><a href="/">Home</a></li>
+					<li><a href="about">Sobre</a></li>
+					<li><a href="projects">Projetos</a></li>
+					<li><a href="contact">Contato</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-menu-icon">
+				<button onclick="menuShow()"><img class="icon" src="../static/img/menu-hamburger-nav-svgrepo-com.svg" alt="menu"></button>
+			</div>
+			<nav class="mobile-menu">
+				<ul> 
+					<li><a href="/">Home</a></li>
+					<li><a href="about">Sobre</a></li>
+					<li><a href="projects">Projetos</a></li>
+					<li><a href="contact">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			
+		 	<section class=" left-column">	
+				<article>
+					<figure> 
+					<img id="profissional-picture1" src="../static/img/perfil.jpg">
+					</figure>
+				</article>				
+				<article>
+					
+					<h3>Rede Social</h3>
+					<a href="https://www.linkedin.com/in/	christhian-rodrigues-3232b71ab/" target="blank"> <p> Linkedin</p></a>
+				
+
+					<a href="https://www.linkedin.com/in/	christhian-rodrigues-3232b71ab/" target="blank">
+						<img id="social-network" src="../static/img/linkedin-svgrepo-com.svg" alt="linkedin">  
+					</a>                           
+				
+					<a href="https://api.whatsapp.com/send?phone=5511945264516&text=Gostaria%20de%20convid%C3%A1-lo%20para%20fazer%20parte%20da%20nossa%20equipe!" target="blank">
+						<p>WhatsApp</p></a>
+						<a href="https://api.whatsapp.com/send?phone=5511945264516&text=Gostaria%20de%20convid%C3%A1-lo%20para%20fazer%20parte%20da%20nossa%20equipe!" target="blank">
+						 <img id="social-network" src="../static/img/whatsapp-color-svgrepo-com.svg" alt="whatsapp">  
+						</a>   
+				</article>
+
+				
+			</section>
+
+			<section class="middle-column">
+				<article>
+					
+					<form action="/message" id="register" method="post" >
+						<p>Contato:</p>
+						<div class="field"><input name="nome" type="text" placeholder="Digite seu nome..."> </div>
+						<div class="field"><input name="email" type="text" placeholder="Digite seu e-mail..."></div>
+						<div class="field1"><input name="mensagem" type="text" placeholder="Mensagem..."></div>
+						
+						<button type="submit" class="send"> Enviar </button> 
+
+					</form>
+				</article>	
+			</section>
+			
+		</main>
+		
+		<footer>	
+			<h3	class="animation-footer">  Obrigado por visitar meu portfólio online</h3>
+		</footer>
+		<script src="../static/js/script.js"></script>
+
+	</body>
+</html>
