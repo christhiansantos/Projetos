@@ -3,7 +3,6 @@
 	color: white;
 	font-family: arial;  
 }
-
 body{
 	padding: 20px;
 	background-image: url("../img/fundo5.jpg");
@@ -13,11 +12,9 @@ p{
 	text-align: justify;
 	font-size: 16px;
 }
-
 html {
     scroll-padding-top: 280px; 
 }
-
 header{
 	text-align: center;
 	background-image: url("../img/fundo2.avif");
@@ -26,8 +23,6 @@ header{
 	position: fixed;
 	top: 0;
 }
-
-
 footer{
 	text-align: center;
 	margin-top: 20px;
@@ -36,25 +31,21 @@ footer{
 	padding: 10px;
 }
 
-
 .menu{
     flex: 1;
 	height: 100%;
 }
-
 .menu ul{
     display: flex;
     justify-content: flex-end;
     list-style: none;
 }
-
 .menu li{
   min-width: 20px;
   line-height: 28px;
   font-size: 18px;
   
 }
-
 .menu a {
     color: #37bff5;
     text-decoration: none;
@@ -62,7 +53,6 @@ footer{
     padding: 10px;
 	font-size: 16px;
 }
-
 .menu li :hover {
     color: #faf6f6;
 	background-color: #37bff5;
@@ -72,19 +62,15 @@ footer{
 	transition: background-color 1s; 
 
 }
-
 .left-column{
 	float: left;
 	width:25%;
 	padding-right: 20px;
 }
-
 .middle-column{
 	float: left;
 	width: 50%;
 }
-
-
 .right-column{
 	float: left;
 	width: 25%;
@@ -92,52 +78,39 @@ footer{
 	position: sticky;
 	top: 210px;
 }
-
 .card .bold{
 	font-weight: bold;
 }
-
 a :hover{
 	color: #038cfc;
 }
-
 a {
     text-decoration: none;
 }
-
 #occupation-area{
 	margin: 10px;
 }
-
 article {
 	background-color: rgba(245, 245, 248, 0.082);
 	padding:  15px;
 	margin-top: 20px;
 }
-
-
 .card-content li {
 	margin: 15px;
 }
-
-
 main:after{
 	content: "";
 	display: table;
 	clear: both;
 }
-
-
 main{
 	padding-top: 14%;
     margin-top: auto;
 }
-
 figure{
 	padding-left:  0px;
 	margin: 0px;
 }
-
 .projetos{
 	width: 100%;
 	padding: 2%;
@@ -151,26 +124,20 @@ figure{
     background-color: rgb(3, 3, 3);
     padding: 16px;
 }
-
-
-
 .card {
     flex-basis: 250px;
     flex-grow: 1;
 }
-
 .card img {
     width: 100%;
     
   height: 80%; 
     display: block;
 }
-
 #occupation-area {
     padding-top: 60px; 
     margin-top: -60px; 
 }
-
 #social-network{
 	animation-duration: 4s;
 	animation-name: image;
@@ -179,7 +146,6 @@ figure{
 	animation-iteration-count: 2;
 	
 }
-
 #profissional-picture{
 	animation-duration: 4s;
 	animation-name: rotate-image;
@@ -188,11 +154,9 @@ figure{
 	animation-iteration-count: 1;
 	background: black;
 	width: 250px;
-
 	padding: 2%;
 	border-radius: 10px 50px;
 }
-
 #profissional-picture1{
 	background: black;
 	padding: 2%;
@@ -200,12 +164,10 @@ figure{
 	max-width: 200px;
 	min-width: 150px;
 }
-
 #logo{
 	width: 17%;
 	top: 0;
 }
-
 #register{
 	background-color: hwb(0 99% 1%);
 	width: 100%;
@@ -218,14 +180,12 @@ figure{
 	padding: 20px;
     
 }
-
 #register p {
 	font-size: 1.5em;
 	font-weight: bold;
 	margin-bottom: 25px;
 	color: rgb(2, 2, 2);
 }
-
 #register .field {
 	font-size: 18px;
 	margin-bottom: 25px;
@@ -235,7 +195,6 @@ figure{
 	font-size: 18px;
 	margin-bottom: 15px;
 }
-
 #register input{
 	width: 100%;
 	padding: .75rem 1rem;
@@ -244,7 +203,6 @@ figure{
 	color: #0e0d0d;
   
 }
-
 #register button{
 	width: 100%;
 	border: none;
@@ -255,7 +213,6 @@ figure{
 	font-size: 1.2em;
 	border-radius: 30px 30px 30px 30px;
 }
-
 .loading{
 	width: 30px;
 	animation: spin 1s infinite linear;
@@ -268,19 +225,16 @@ figure{
 		transform: rotate(360deg);
 	}
 }
-
 @keyframes rotate-image{
 	50%{
 		transform: translateZ(-10px) rotateX(60deg) rotateZ(29deg) rotateY(-180deg);
 	}
 }
-
 @keyframes image{
 	50%{
 		transform: translateZ(-10px) rotateX(60deg) rotateZ(29deg) rotateY(-180deg);
 	}
 }
-
 @keyframes animation{
 				
 	from{
@@ -291,7 +245,6 @@ figure{
 		transform: translateX(20px);
 	}
 }
-
 .animation-footer {
 	animation-name: animation;
 	animation-duration: 2s;
@@ -299,20 +252,16 @@ figure{
 	animation-timing-function: linear;
 	animation-direction: alternate;
 }
-
 .mobile-menu {
 	display: none;
 }
 .mobile-menu-icon {
     display: none;
 }
-
 .mobile-menu ul{
     
     list-style: none;
 }
-
-
 .mobile-menu a {
     color: #37bff5;
     text-decoration: none;
@@ -320,7 +269,6 @@ figure{
     padding: 10px;
 	font-size: 16px;
 }
-
 .mobile-menu li :hover {
     color: #faf6f6;
 	background-color: #37bff5;
@@ -330,7 +278,6 @@ figure{
 	transition: background-color 1s; 
 
 }
-
 @media all and (max-width: 850px){
  
 	header{
@@ -354,8 +301,6 @@ figure{
         text-align: center;
         padding-bottom: 1rem;
     }
-   
-	
 	main{
 		padding-top: 80px;
 	}
@@ -363,31 +308,26 @@ figure{
 		width: 100%;
 		padding-right: 0px;
 	}
-	
 	header #menu li{
 		font-size: 16px;
 	}
 	.middle-column{
 		width: 100%;
 	}
-
 	.right-column{
 		width: 100%;
 		padding-left: 0px;
 		padding-top: 0px;
 	}
-	
 	p{
 		text-align: justify;
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 	}
-
 	#logo{
 		width: 150px;
 		top: 0;
 		min-width: 80px;
-
 	}
 	#profissional-picture{
 		max-width: 250px;
@@ -400,7 +340,6 @@ figure{
 		padding: 10px;
 	}
 }
-
 @media all and (max-width: 500px) {
 	header{
 		font-size: 16px;
@@ -421,8 +360,6 @@ figure{
 		width: 100%;
 		padding-right: 0px;
 	}
-	
-	
 	.middle-column{
 		width: 100%;
 	}
@@ -431,27 +368,20 @@ figure{
 		top: 0;
 	}
 }
-
-@media all and (min-width: 1600px) and (max-width: 2800px) {
-   
+@media all and (min-width: 1600px) and (max-width: 2800px) {  
     main {
 		padding-top: 240px;
     }
 
-  
 	.right-column{
 	
 		top: 250px;
 	}
 }
-
-
 @media all and (min-width:860px) and (max-width: 1100px) {
-   
     main {
 		padding-top: 120px;
     }
-  
 	.right-column{
 	
 		top: 160px;

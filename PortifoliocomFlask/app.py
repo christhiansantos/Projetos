@@ -9,16 +9,6 @@ banco = sqlite3.connect('mensagens.db', check_same_thread=False)
 
 cursor = banco.cursor()
 
-#cursor.execute("create table mensagens (Nome TEXT NOT NULL, Email NOT NULL, Mensagem TEXT NOT NULL)")
-
-#cursor.execute("INSERT INTO mensagens VALUES ('cris rodrigues ','chris@teste','quase la kk')")
-
-
-""" cursor.execute("SELECT * FROM mensagens")
-print(cursor.fetchall()) """
-
-
-
 @app.route("/message", methods=['POST'])  
 def message():
     nome = request.form.get('nome')
@@ -33,11 +23,9 @@ def message():
     #banco.close()
     return redirect('contact')
    
-
 @app.route('/')
 def index():
     return render_template("index.html")
-
 
 @app.route('/about')
 def about():
@@ -51,9 +39,6 @@ def projects():
 def contact():
     return render_template("contact.html")
   
-
-
-
 if __name__ in "__main__":
     app.run(debug=True)
   
