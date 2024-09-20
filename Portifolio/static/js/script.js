@@ -26,7 +26,6 @@ button.addEventListener('click', function(event) {
 
     setTimeout(function() {
         removeLoading();
-
         document.querySelector('form').submit();
     }, 1000);
 });
