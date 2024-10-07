@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;	
+	border: 0;
+
+}
+html{
+	color: black;
+	font-family: arial;  
+	font-size: 16px;
+}
+h2{
+	font-size:1.6rem;
+}
+h3{
+	font-size: 1.2rem;
+}
+header{
+	background-color: rgb(13, 13, 14);
+	width: 100%;
+	position: fixed;
+	color: white;
+	font-size: 1.8rem;
+	display: flex;
+    flex-direction: column; 
+    align-items: center;  
+	padding: 0;	
+}
+main{
+	padding-top: 100px;
+    margin-top: auto;
+}
+body{
+	background-color: rgb(209, 205, 205);
+}
+footer{
+	background-color: rgb(13, 13, 14);
+	font-size: 1rem;
+	padding: 1rem;
+	color: rgb(255, 251, 251);
+	text-align: center;
+}
+.content{
+	font-size: 1rem;
+	background-color: #fff;
+	padding: 1.6rem;
+	margin: 0 auto;
+	text-align: justify;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	max-width: 90%;
+}
+.image{
+	max-width: 400px;
+}
+figure{
+	text-align: center;
+}
+.logo{
+	width: 155px;
+	height: 105px;
+}
+a :hover{
+	color: #038cfc;
+}
+a {
+	color: white;
+    text-decoration: none;
+}
+#social-network{
+	animation-duration: 4s;
+	animation-name: image;
+	animation-timing-function: ease-in-out;
+	animation-delay: 2s;
+	animation-iteration-count: 2;
+}
+@keyframes image{
+	50%{
+		transform: translateZ(-10px) rotateX(60deg) rotateZ(29deg) rotateY(-180deg);
+	}
+}
+.carousel-container {
+	max-width: 500px; 
+	max-height: 400px; 
+	overflow-x: scroll; 
+	display: flex;
+	scroll-behavior: smooth; 
+	margin: 0 auto; 
+}
+.carousel {
+	display: flex; 
+	gap: 10px; 
+	
+}
+.carousel img {
+	max-width: 500px; 
+	height: 400px; 
+	object-fit: contain; 
+	scroll-snap-align: center; 
+}
+.carousel-container-mobile {
+	max-width: 510px; 
+	max-height: 450px; 
+	overflow-x: scroll; 
+	display: none; 
+	margin: 0 auto; 
+}
+.carousel-mobile {
+	display: flex; 
+	gap: 10px; 
+}
+.carousel-mobile img {
+	max-width: 500px; 
+	height: 400px; 
+	object-fit: contain; 
+	scroll-snap-align: center; 
+}
+@media all and (max-width: 600px) {
+	
+	.carousel-container-mobile {
+        display: flex; /* Exibe o carousel mobile */
+		max-width: 350px; 
+		max-height: 290px; 
+    }
+	.carousel-mobile img {
+		max-width: 320px;
+		max-height: 290px;
+    }
+	.image {
+		display: none; /* Esconde a imagem padrão, se aplicável */
+	}
+	.carousel-container {
+		max-width: 350px; 
+		max-height: 290px; 
+	}
+	.carousel img {
+		max-width: 320px;
+		max-height: 290px;
+	}
+	.logo {
+		width: 120px;
+		height: 90px;
+	}
+	.carousel {
+		gap: 1px; 
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+	main {
+		padding-top: 80px;
+	}
+	.content {
+		max-width: 80%;
+	}
+}

@@ -97,7 +97,7 @@ figure{
 	animation-delay: 2s;
 	animation-iteration-count: 2;
 	background: black;
-	width: 100%;
+	max-width: 250px;
 	padding: 3%;
 	border-radius: 10px 50px;
 }
@@ -143,7 +143,9 @@ figure{
 		width: 100%;
 		padding-right: 0px;
 	}
-
+	#profissional-picture{
+		width: 200px;
+	}
 	.middle-column{
 		width: 100%;
 	}

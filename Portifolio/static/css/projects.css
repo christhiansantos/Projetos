@@ -51,21 +51,19 @@ footer{
   min-width: 20px;
   line-height: 28px;
   font-size: 18px;
-  
 }
 
 .menu a {
     color: #37bff5;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
 	font-size: 16px;
 }
 
 .menu li :hover {
     color: #faf6f6;
 	background-color: #37bff5;
-	padding: 5px;
 	border-radius: 10px;
 	border: solid  #faf6f6;
 	transition: background-color 1s; 
@@ -195,14 +193,13 @@ figure{
     color: #37bff5;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
+    padding: 1px;
 	font-size: 16px;
 }
 
 .mobile-menu li :hover {
     color: #faf6f6;
 	background-color: #37bff5;
-	padding: 5px;
 	border-radius: 10px;
 	border: solid  #faf6f6;
 	transition: background-color 1s; 

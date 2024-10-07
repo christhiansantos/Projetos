@@ -58,18 +58,17 @@ footer{
     color: #37bff5;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
 	font-size: 16px;
 }
 
 .menu li :hover {
     color: #faf6f6;
 	background-color: #37bff5;
-	padding: 5px;
+	padding: 3px;
 	border-radius: 10px;
 	border: solid  #faf6f6;
 	transition: background-color 1s; 
-
 }
 
 .left-column{
@@ -167,14 +166,13 @@ main{
     color: #37bff5;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
-	font-size: 16px;
+    padding: 1px;
+	font-size: 14px;
 }
 
 .mobile-menu li :hover {
     color: #faf6f6;
 	background-color: #37bff5;
-	padding: 5px;
 	border-radius: 10px;
 	border: solid  #faf6f6;
 	transition: background-color 1s; 
