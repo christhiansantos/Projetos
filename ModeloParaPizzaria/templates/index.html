@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../static/css/index.css">
+		<title>Chris&Cris Pizzaria</title>
+	</head>
+	<body>
+		<header>	
+			<figure>
+				<img class="logo" src="../static/img/logoPizzaria.png" alt="LogoPizzaria">
+			</figure>
+			<div>
+				<nav class="menu">
+					<ul>
+						<li><a href="#pizzas">Pizzas</a> </li>	
+						<li> <a href="#bebidas">Bebidas</a></li>	
+						<li><a href="#salgados">Salgados</a> </li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>		
+			<br>
+		 	<section class="content-top">
+				<div id="compras">
+					<figure>
+						<img src="../static/img/carrinho.svg" alt="carrinho">
+						<figcaption onclick="toggleDiv('todosprodutos')"><a href="#Carrinho"> Carrinho </a></figcaption>
+					</figure>
+				</div>
+				<div class="carrinho">
+					<div class="pesquisaProduto">
+					  <input type="text" id="searchInput1" placeholder="Pesquisar produtos...">
+					  <button id="pesquisa1" onclick="pesquisarProduto('searchInput1')">Pesquisar</button>
+					  <div id="produtosPesquisados1"></div>
+					</div>
+					<div class="containerproduto" id="todosprodutos" class="hidden">
+					  <div>
+						<input type="text" id="searchInput2" placeholder="Pesquisar produtos...">
+						<button id="pesquisa2" onclick="pesquisarProduto('searchInput2')">Pesquisar</button>
+						<div id="produtosPesquisados2"></div>
+					  </div>
+					  <h1>Carrinho de Compras</h1>
+					  <h2>Produtos</h2>
+					  <div id="produtos"></div>
+					  <h2>Total: R$ <span id="total">0.00</span></h2>
+					  <button onclick="fazerPedido()">Fazer pedido</button>
+					</div>
+					<br>
+				</div>
+			<br>
+			<br>
+			<br>
+			<h1>Pizzas, Bebidas e Salgados todos os dias</h1>
+			<h5>Promoção</h5>
+			<h5>De segunda a quinta todas as PIZZAS por</h5>
+			<h5>apenas R$50,00</h5>
+			</section>
+			<br>
+			<section class="content" id="grid-content">
+				<H5 id="pizzas">  Cardápio de Pizzas</H5>		
+				<div class="grid" >
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/calabresa.jpg" alt="pizzaCalabresa">
+							<figcaption onclick="toggleDiv('produto1')"><a href="#pizzaDeCalabresa"> Pizza de Calabresa </a></figcaption>
+						</figure>
+						<div id="produto1" class="hidden">
+							<p> Calabresa com cebola.</p>
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>R$59,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Pizza de Calabresa', 59.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<figure>
+						  <img class="image-site" src="../static/img/frango.jpg" alt="pizzaDeFrango">
+						  <figcaption onclick="toggleDiv('produto2')"><a href="#pizzaDeFrango">Pizza de Frango</a></figcaption>
+						</figure>
+						<div id="produto2" class="hidden">
+						  <p>Frango desfiado com mussarela ou catupiry.</p>
+						  	<div class="containerbox">
+								<div class="box">
+							 		<h6>R$59,00</h6>
+								</div>
+								<div class="box">
+							 		<figure>
+										<button onclick="adicionarAoCarrinho('Pizza de Frango', 59.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+							 		</figure>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/marguerita.jpg" alt="PizzaMarguerita">
+							<figcaption onclick="toggleDiv('produto3')"> <a  href="#pizzaMarguerita"> Pizza de Marguerita</a></figcaption>
+						</figure>					
+						<div id="produto3" class="hidden">
+							<p>Mussarela, parmesão, manjericão e tomate.</p>
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>R$59,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Pizza Marguerita' , 59.00) "><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>									
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/mussarela.jpg" alt="PizzamMussarela">
+							<figcaption onclick="toggleDiv('produto4')"><a href="#pizzaMussarela">Pizza de Mussarela</a></figcaption>
+						</figure>
+						<div id="produto4" class="hidden">
+							<p>Mussarela e rodelas de tomate.</p>
+							<div class="containerbox">					
+								<div class="box"> 
+									<h6>R$59,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Pizza de Mussarela', 59.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+									</figure>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/palmito.jpg" alt="PizzaPalmito">
+							<figcaption onclick="toggleDiv('produto5')"> <a href="#PizzaPalmito">Pizza de Palmito</a> </figcaption>
+						</figure>
+						<div id="produto5" class="hidden">
+							<p> Palmito e mussarela ou catupiry.</p>
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>R$59,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Pizza de Palmito', 59.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+									</figure>
+								</div>
+							</div>					
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/portuguesa.jpg" alt="PizzaPortuguesa">
+							<figcaption onclick="toggleDiv('produto6')"> <a href="#PizzaPortuguesa">Pizza Portuguesa</a> </figcaption>
+						</figure>
+						<div id="produto6" class="hidden">
+							<p>Presunto, ervilha, ovos, cebola e mussarela.</p>
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>  R$59,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Pizza Portuguesa', 59.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+									</figure>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</section>			
+			<br>
+			<section class="content" id="grid-content">
+				<H5 id="bebidas">Bebidas</H5>
+				<div class="grid">
+					<div> 
+						<figure>
+							<img class="image
+							" src="../static/img/refri1.jpg" alt="refri1">
+							<figcaption onclick="toggleDiv('produto7')"><a href="#cocaCola">Coca Cola </a></figcaption>
+						</figure>					
+						<div id="produto7" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>  R$15,00</h6> 
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Coca Cola 2L', 15.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>								
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div> 
+						<figure>
+						<img class="image" src="../static/img/refri2.jpg" alt="refri2">
+						<figcaption onclick="toggleDiv('produto8')"><a href="#fantaLaranja">Fanta Laranja </a></figcaption>
+						</figure>				
+						<div id="produto8" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>R$15,00</h6> 
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Fanta Laranja 2L', 15.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image" src="../static/img/refri3.jpg" alt="refri3">
+							<figcaption onclick="toggleDiv('produto9')"><a href="#sodaLimonada">Soda Limonada</a></figcaption>
+						</figure>
+						<div id="produto9" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>R$12,00</h6> 
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Soda Limonada 2L', 12.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image" src="../static/img/refri4.jpg" alt="refri4">
+							<figcaption  onclick="toggleDiv('produto10')"><a href="#refrigeiranteLata">Refrigerante em lata </a></figcaption>
+						</figure>
+						<div id="produto10" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>R$8,00</h6> 
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Refrigerante 350ml', 8.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>					
+					</div>
+					<div> 
+						<figure>
+							<img class="image" src="../static/img/refri5.jpg" alt="refri5">
+							<figcaption onclick="toggleDiv('produto11')"> <a href="#cocaCola350ml"> Coca Cola 350ml</a> </figcaption>
+						</figure>
+						<div id="produto11" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>R$8,00</h6> 
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Coca Cola 350ml', 8.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image" src="../static/img/refri6.jpg" alt="refri6">
+							<figcaption onclick="toggleDiv('produto12')"><a href="#guarana350ml">Guaraná Antarctica 350ml</a> </figcaption>
+						</figure>
+						<div id="produto12" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>  R$8,00</h6> 
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Guaraná Antarctica 350ml', 8.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br>
+			<section class="content" id="grid-content">
+				<H5 id="salgados">Cardápio de Salgados</H5>
+				<div class="grid" id="TodosSalgados">
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/salgados1.jpg" alt="salgados1">
+							<figcaption onclick="toggleDiv('produto13')"><a href="#coxinha">Coxinha</a></figcaption>
+						</figure>
+						<div id="produto13" class="hidden ">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>Unidade R$6,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Coxinha', 6.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+						<img class="image-site" src="../static/img/salgados2.jpg" alt="salgados2">
+						<figcaption onclick="toggleDiv('produto14')"><a href="#bolinhoQueijo">Bolinho de Queijo</a></figcaption>
+						</figure>
+						<div id="produto14" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6> Unidade R$3,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Bolinho de Queijo', 3.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/salgados3.jpg" alt="salgados3">					
+							<figcaption onclick="toggleDiv('produto15')"><a href="#miniCoxinha">Mini Coxinha</a></figcaption>
+						</figure>
+						<div id="produto15" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>Unidade R$3,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Mini Coxinha', 3.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/salgados4.jpg" alt="salgados4">
+							<figcaption onclick="toggleDiv('produto16')"><a href="#Enroladinho">Enroladinho de presunto e queijo</a></figcaption>
+						</figure>
+						<div id="produto16" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>Unidade R$3,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Enroladinho', 3.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/salgados5.jpg" alt="salgados5">
+							<figcaption onclick="toggleDiv('produto17')"> <a href="#salgadoDeCarne">Bolinho de Carne</a> </figcaption>
+						</figure>
+						<div id="produto17" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>Unidade R$3,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Bolinho de Carne', 3.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<figure>
+							<img class="image-site" src="../static/img/salgados6.jpg" alt="salgados6">
+							<figcaption onclick="toggleDiv('produto18')"> <a href="#salgadosSortidos">Salgados Sortidos</a> </figcaption>
+						</figure>
+						<div id="produto18" class="hidden">
+							<div class="containerbox">
+								<div class="box"> 
+									<h6>Unidade R$2,00</h6>
+								</div>
+								<div class="box">
+									<figure>
+										<button onclick="adicionarAoCarrinho('Salgados Sortidos', 3.00)"><img src="../static/img/carrinho.svg" alt="carrinho"></button>
+								  	</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="mensagens"></div>
+				<div id="mensagem" class="hidden">Produto adicionado ao carrinho!</div>
+			</section>
+			<br>
+		</main>
+		<footer>	
+			<div>
+				<figure>
+					<img class="logo" src="../static/img/logo1.png" alt="Logo">	
+					<figcaption>
+						<a href="https://portifoliochris.netlify.app/" target="blank">  Portfólio</a>
+					</figcaption>			
+				</figure>
+			</div>	
+			<div>
+				<figure>
+					<img id="social-network" src="../static/img/linkedin-svgrepo-com.svg" alt="linkedin"> 
+					<figcaption>
+						<a href="https://www.linkedin.com/in/	christhian-rodrigues-3232b71ab/" target="blank">  Linkedin</a>
+					</figcaption>
+				</figure>
+				<br>
+			</div>	
+			<div>
+				<figure>
+					<img id="social-network" src="../static/img/whatsapp-color-svgrepo-com.svg" alt="whatsapp">
+					<figcaption>
+						<a href="https://api.whatsapp.com/send?phone=5511945264516&text=Gostaria%20de%20convid%C3%A1-lo%20para%20fazer%20parte%20da%20nossa%20equipe!" target="blank">
+							WhatsApp</a>
+					</figcaption>
+				</figure>	
+				<br>
+			</div>	
+		</footer>
+		<script src="../static/js/script.js"></script>
+
+	</body>
+</html>
